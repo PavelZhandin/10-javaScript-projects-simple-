@@ -56,21 +56,79 @@ img{
 .fav-container {
   padding : 1rem;
   text-align: center;
+  background-color: rgb(244, 228, 254);
 }
 
 .fav-meals{
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   padding: 0;
+  overflow: hidden;
 }
 
 .fav-meals li{
-  
+  width: 85px;
 }
 
 .fav-meals li img {
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  height: 100px;
   object-fit: cover;
-  width: 100px;
+  box-shadow: 0 0 5px #3333331a;
+  height: 70px;
+  width: 70px;
+}
+
+.fav-meals li span{
+  font-size: 0.9rem;
+}
+
+.meal{
+  border-radius: 3px;
+  box-shadow: 0 0 5px #000000AA;
+  margin: 1.3rem;
+}
+
+.meal-header{
+  position: relative;
+}
+
+.meal-header .random{
+  position: absolute;
+  top: 15px;
+  background-color: #FFF;
+  padding: 0.25rem 0.5rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.meal-header img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.meal-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.meal-body h4{
+  margin: 0;
+}
+
+.meal-body .fav-btn{
+  border: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: rgb(189, 185, 185);
+}
+
+.meal-body .fav-btn.active{
+  color: rebeccapurple;
 }
